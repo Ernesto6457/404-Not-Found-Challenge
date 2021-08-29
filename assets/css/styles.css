@@ -1,0 +1,189 @@
+/** General Styles **/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --primary: #333333;
+    --secondary: #333333;
+    --third: #4F4F4F;
+    --Fourfth: #BDBDBD;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.48;
+    color: #333333;
+    background: #FFFFFF;
+    font-family: 'Space Mono', monospace;
+}
+
+/** Navbar **/
+
+.navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar h2 {
+    font-family: "Inconsolata", Consolas;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+/** Hero **/
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 140px);
+}
+
+.hero img {
+    width: 100%;
+}
+
+.hero .content-wrapper {
+    margin-left: 2rem;
+}
+
+.hero .title {
+    font-size: 64px;
+    margin-bottom: 25px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+}
+
+.hero .lead {
+    font-size: 24px;
+    max-width: 390px;
+    color: #4F4F4F;
+}
+
+/** Footer **/
+
+footer {
+    height: 60px;
+    display: flex;
+    color: #BDBDBD;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+}
+
+/** Buttons **/
+
+.btn {
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 14px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    margin-top: 35px;
+    background: #333333;
+    display: block;
+    width: max-content;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+}
+
+/** FlexBox System **/
+
+.container {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(1.5rem * -1);
+  margin-right: calc(1.5rem * -.5);
+  margin-left: calc(1.5rem * -.5);
+}
+
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(1.5rem * .5);
+  padding-left: calc(1.5rem * .5);
+}
+
+/** Media Queries **/
+
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding-left: 2rem;
+    }
+
+    .hero {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .col-md-1 {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+    }
+  
+    .col-md-2 {
+        flex: 0 0 auto;
+        width: 58.33333333%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .hero .content-wrapper {
+        margin-left: 0;
+    }
+
+    .hero .title {
+        font-size: 48px;
+        line-height: 1.48;
+    }
+
+    .hero .lead {
+        font-size: 18px;
+        line-height: 1.48;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
